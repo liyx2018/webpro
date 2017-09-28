@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScriptTest01</title>
+
+    <script>
+
+        function showData() {
+            document.getElementById("id_show").innerHTML=Date();
+        }
+
+    </script>
+</head>
+<body>
+    <p id="id_show">default display for Time</p>
+    <button type="button" onclick="showData()">click it</button>
+
+    <script>
+        document.writeln("<h1> This is a line of code for js</h1>")
+    </script>
+
+    <button type="button" onclick="alert('boom amazing')">click me quickly</button>
+
+    <script>
+
+        function open_lamp() {
+            lamp = document.getElementById("id_lamp");
+            if (lamp.src.match("bulbon")){
+                lamp.src="../img/pic_bulboff.gif";
+            }else {
+                lamp.src="../img/pic_bulbon.gif";
+            }
+        }
+
+    </script>
+
+    <img id="id_lamp" onclick="open_lamp()" src="../img/pic_bulboff.gif" width="100px" height="180px">
+    <p>点击灯泡图片，可以体验开关灯效果</p>
+
+     <input placeholder="请输入数字" id="input_num" type="text">
+     <script>
+         function query() {
+             var num =document.getElementById("input_num").value;
+             if (num =="" || isNaN(num)){
+                 alert("不是数字")
+             }
+         }
+
+
+     </script>
+     <button type="button" onclick="query()">查询</button>
+
+
+
+
+</body>
+</html>
