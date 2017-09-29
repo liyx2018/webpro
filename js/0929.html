@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <script>
+        function showTime() {
+//           document.getElementById("demo").innerHTML="替换掉的代码";
+            document.write(Date());
+            console.log("打印下日志："+Date());
+        }
+
+    </script>
+</head>
+<body>
+   <h1 id="hi">我的第一个 Web 页面</h1>
+   <p id="demo">一段代码</p>
+   <button type="button" onclick="showTime()">点击</button>
+
+   <script>
+       var oj = new Object();
+
+       var people = { name : 52,
+           age : "山海" };
+
+       document.write(people.age);
+
+   </script>
+   <br>
+   <script>
+//       var student ={
+//           name : "liyaxi",
+//           age : 15,
+//           show : function () {
+//               return this.name+""+this.age;
+//           }
+//       };
+//
+//       document.writeln(student.show());
+       var myDate = new Date();
+       document.getElementById("hi").innerHTML = isDate(myDate);
+       function isDate(myDate) {
+           return myDate.constructor.toString().indexOf("Date") > -1;
+        }
+       
+   </script>
+
+
+
+</body>
+</html>
