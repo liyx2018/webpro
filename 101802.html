@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <div id="div1">
+      <p>第一行代码</p>
+  </div>
+
+
+  <script>
+      var para = document.createElement("p");
+      var  tex = document.createTextNode("第二行代码");
+      para.appendChild(tex);
+
+      var element = document.getElementById("div1");
+      element.appendChild(para);
+
+  </script>
+
+
+</body>
+</html>
